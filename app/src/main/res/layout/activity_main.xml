@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:padding="16dp"
+            android:useDefaultMargins="true">
+
+            <Button
+                android:id="@+id/flightsHome"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:text="Flights Home" />
+
+            <Button
+                android:id="@+id/busHome"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:text="Bus Home" />
+
+
+            <Button
+                android:id="@+id/hotelsHome"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:text="Hotels Home" />
+
+            <Button
+                android:id="@+id/flightsTrips"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:text="Flights Trips" />
+
+            <Button
+                android:id="@+id/busTrips"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:text="Bus Trips" />
+
+            <Button
+                android:id="@+id/hotelsTrips"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:text="Hotels Trips" />
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</layout>
